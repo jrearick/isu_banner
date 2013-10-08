@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.monkey #block-views-banners-block .views-slideshow-controls-bottom {
+#block-views-banners-block .monkey .views-slideshow-controls-bottom {
 	position: absolute;
 	bottom: 10px;
 	left: 795px;
