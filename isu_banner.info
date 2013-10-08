@@ -1,0 +1,23 @@
+name = ISU Banner
+description = A homepage slider similar to the one on the university homepage.
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = views
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = field_banner_banner
+features[field_base][] = field_banner_link
+features[field_instance][] = node-banner-field_banner_banner
+features[field_instance][] = node-banner-field_banner_link
+features[node][] = banner
+features[views_view][] = banners
+
+stylesheets[all][] = banner.css
