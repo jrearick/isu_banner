@@ -10,9 +10,9 @@
 function isu_banner_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-banner-field_banner_banner'
-  $field_instances['node-banner-field_banner_banner'] = array(
-    'bundle' => 'banner',
+  // Exported field_instance: 'node-isu_banner-field_isu_banner_image'
+  $field_instances['node-isu_banner-field_isu_banner_image'] = array(
+    'bundle' => 'isu_banner',
     'deleted' => 0,
     'description' => 'The banner needs to be a jpg or jpeg at 72dpi resolution at 960px wide by 340px tall. There is a Photoshop template for creating this image available from Barb.',
     'display' => array(
@@ -34,7 +34,7 @@ function isu_banner_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_banner_banner',
+    'field_name' => 'field_isu_banner_image',
     'label' => 'Banner',
     'required' => 1,
     'settings' => array(
@@ -60,9 +60,9 @@ function isu_banner_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_banner_link'
-  $field_instances['node-banner-field_banner_link'] = array(
-    'bundle' => 'banner',
+  // Exported field_instance: 'node-isu_banner-field_isu_banner_link'
+  $field_instances['node-isu_banner-field_isu_banner_link'] = array(
+    'bundle' => 'isu_banner',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'URL or Path of where this banner should link to.',
@@ -82,7 +82,7 @@ function isu_banner_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_banner_link',
+    'field_name' => 'field_isu_banner_link',
     'label' => 'Link',
     'required' => 0,
     'settings' => array(

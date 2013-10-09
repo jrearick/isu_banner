@@ -1,12 +1,12 @@
 /* frontpage banner slideshow */
-.monkey {
+.isu-banner-view {
 	margin-top: -6px;
 	height: 340px;
 	width: 960px;
 	position: relative;
 }
 
-#block-views-banners-block .monkey .views-slideshow-controls-bottom {
+#block-views-isu-banner-block .isu-banner-view .views-slideshow-controls-bottom {
 	position: absolute;
 	bottom: 10px;
 	left: 795px;
@@ -14,7 +14,7 @@
 	width: 100%;
 }
 
-#block-views-banners-block .views-field-counter {
+#block-views-isu-banner-block .views-field-counter {
 	float: left;
 	cursor: pointer;
 	background-color: #ccc;
@@ -33,29 +33,29 @@
 	width: 12px;
 }
 
-#block-views-banners-block .views-field-counter:hover {
+#block-views-isu-banner-block .views-field-counter:hover {
 	background-color: #fff;
 }
 
-#block-views-banners-block .active .views-field-counter {
+#block-views-isu-banner-block .active .views-field-counter {
 	background: #b01825;
 	color: #fff;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_previous_banners-block {
+#block-views-isu-banner-block #views_slideshow_controls_text_previous_isu_banner-block {
 	display: none;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_next_banners-block {
+#block-views-isu-banner-block #views_slideshow_controls_text_next_isu_banner-block {
 	display: none;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_banners-block {
+#block-views-isu-banner-block #views_slideshow_controls_text_isu_banner-block {
 	float: left;
 	margin-top: 3px;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_pause_banners-block {
+#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu_banner-block {
 	cursor: pointer;
 	background-color: #ccc;
 	background-color: rgba(255,255,255,0.7);
@@ -78,11 +78,11 @@
 	width: 12px;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_pause_banners-block a {
+#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu_banner-block a {
 	display: none;
 }
 
-#block-views-banners-block #views_slideshow_controls_text_pause_banners-block:hover {
+#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu-banner-block:hover {
 	background-color: #fff;
 }
 

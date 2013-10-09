@@ -16,10 +16,10 @@ function isu_banner_views_api($module = NULL, $api = NULL) {
  */
 function isu_banner_node_info() {
   $items = array(
-    'banner' => array(
-      'name' => t('Banner'),
+    'isu_banner' => array(
+      'name' => t('Full Width Banner'),
       'base' => 'node_content',
-      'description' => t('Homepage Banner'),
+      'description' => t('Banner images for the ISU Banner slideshow. Similar to the banners on the Iowa State University homepage.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

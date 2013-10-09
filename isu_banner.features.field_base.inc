@@ -10,13 +10,13 @@
 function isu_banner_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_banner_banner'
-  $field_bases['field_banner_banner'] = array(
+  // Exported field_base: 'field_isu_banner_image'
+  $field_bases['field_isu_banner_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_banner_banner',
+    'field_name' => 'field_isu_banner_image',
     'foreign keys' => array(
       'fid' => array(
         'columns' => array(
@@ -40,13 +40,13 @@ function isu_banner_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_banner_link'
-  $field_bases['field_banner_link'] = array(
+  // Exported field_base: 'field_isu_banner_link'
+  $field_bases['field_isu_banner_link'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_banner_link',
+    'field_name' => 'field_isu_banner_link',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
