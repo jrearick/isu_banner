@@ -16,3 +16,7 @@ Dependencies:
 
 Install jquery.cycle in /sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js. Find it
 at http://jquery.malsup.com/cycle/download.html 
+
+Once installed you can administer banners at admin/isu_banner. This administration views
+page is configured to be accessible only to those with permission 
+'edit any isu_banner content' 
