@@ -96,7 +96,7 @@ function isu_banner_views_default_views() {
   $handler->display->display_options['fields']['field_isu_banner_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_isu_banner_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_isu_banner_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'full_banner_960x340',
     'image_link' => '',
   );
   /* Field: Global: View result counter */
@@ -127,8 +127,8 @@ function isu_banner_views_default_views() {
     'isu_banner' => 'isu_banner',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: Block Full Width */
+  $handler = $view->new_display('block', 'Block Full Width', 'block_banner_full');
   $handler->display->display_options['block_description'] = 'ISU Full Width Banner';
 
   /* Display: Page Admin */
@@ -216,6 +216,41 @@ function isu_banner_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<hr />';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'admin/isu_banner';
+
+  /* Display: Block Content Width */
+  $handler = $view->new_display('block', 'Block Content Width', 'block_banner_content');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_isu_banner_link']['id'] = 'field_isu_banner_link';
+  $handler->display->display_options['fields']['field_isu_banner_link']['table'] = 'field_data_field_isu_banner_link';
+  $handler->display->display_options['fields']['field_isu_banner_link']['field'] = 'field_isu_banner_link';
+  $handler->display->display_options['fields']['field_isu_banner_link']['label'] = '';
+  $handler->display->display_options['fields']['field_isu_banner_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_isu_banner_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_isu_banner_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_isu_banner_link']['type'] = 'link_absolute';
+  /* Field: Content: Banner */
+  $handler->display->display_options['fields']['field_isu_banner_image']['id'] = 'field_isu_banner_image';
+  $handler->display->display_options['fields']['field_isu_banner_image']['table'] = 'field_data_field_isu_banner_image';
+  $handler->display->display_options['fields']['field_isu_banner_image']['field'] = 'field_isu_banner_image';
+  $handler->display->display_options['fields']['field_isu_banner_image']['label'] = '';
+  $handler->display->display_options['fields']['field_isu_banner_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_isu_banner_image']['alter']['path'] = '[field_isu_banner_link]';
+  $handler->display->display_options['fields']['field_isu_banner_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_isu_banner_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_isu_banner_image']['settings'] = array(
+    'image_style' => 'content_banner_760x269',
+    'image_link' => '',
+  );
+  /* Field: Global: View result counter */
+  $handler->display->display_options['fields']['counter']['id'] = 'counter';
+  $handler->display->display_options['fields']['counter']['table'] = 'views';
+  $handler->display->display_options['fields']['counter']['field'] = 'counter';
+  $handler->display->display_options['fields']['counter']['label'] = '';
+  $handler->display->display_options['fields']['counter']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['counter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['counter']['counter_start'] = '1';
+  $handler->display->display_options['block_description'] = 'ISU Content Width Banner';
   $export['isu_banner'] = $view;
 
   return $export;

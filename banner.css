@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-#block-views-isu-banner-block .isu-banner-view .views-slideshow-controls-bottom {
+.isu-banner-view .views-slideshow-controls-bottom {
 	position: absolute;
 	bottom: 10px;
 	left: 795px;
@@ -14,7 +14,7 @@
 	width: 100%;
 }
 
-#block-views-isu-banner-block .views-field-counter {
+.isu-banner-view .views-field-counter {
 	float: left;
 	cursor: pointer;
 	background-color: #ccc;
@@ -33,29 +33,29 @@
 	width: 12px;
 }
 
-#block-views-isu-banner-block .views-field-counter:hover {
+.isu-banner-view .views-field-counter:hover {
 	background-color: #fff;
 }
 
-#block-views-isu-banner-block .active .views-field-counter {
+.isu-banner-view .active .views-field-counter {
 	background: #b01825;
 	color: #fff;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_previous_isu_banner-block {
+.isu-banner-view .views_slideshow_controls_text_previous {
 	display: none;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_next_isu_banner-block {
+.isu-banner-view .views_slideshow_controls_text_next {
 	display: none;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_isu_banner-block {
+.isu-banner-view .views_slideshow_controls_text {
 	float: left;
 	margin-top: 3px;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu_banner-block {
+.isu-banner-view .views_slideshow_controls_text_pause {
 	cursor: pointer;
 	background-color: #ccc;
 	background-color: rgba(255,255,255,0.7);
@@ -78,12 +78,25 @@
 	width: 12px;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu_banner-block a {
+.isu-banner-view .views_slideshow_controls_text_pause a {
 	display: none;
 }
 
-#block-views-isu-banner-block #views_slideshow_controls_text_pause_isu-banner-block:hover {
+.isu-banner-view .views_slideshow_controls_text_pause:hover {
 	background-color: #fff;
+}
+
+/* content width banner */
+
+/* Override isu_banner css to meet our needs */
+.isu-banner-view.view-display-id-block_banner_content {
+	height: 269px;
+	width: 760px;
+	margin-left: -20px;
+	margin-top: -12px;
+}
+.isu-banner-view.view-display-id-block_banner_content .views-slideshow-controls-bottom {
+	left: 595px;
 }
 
 /* end slideshow */
